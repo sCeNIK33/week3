@@ -36,5 +36,19 @@ function pageLoad() {
   // 🔥🔥🔥 YOUR CODE GOES HERE 🔥🔥🔥
   console.log(database)
 
+numberOfProducts=database.products.length      
+products=database.products
+
+let randPromotion1=database.promotions[getRandomInt(database.promotions.length)-1]
+let randPromotion2=database.promotions[getRandomInt(database.promotions.length)-1]
+let randPromotion3=database.promotions[getRandomInt(database.promotions.length)-1]
+
+promotion1Description=database.promotions[getRandomInt(database.promotions.length)-1].description
+promotion2Description=database.promotions[getRandomInt(database.promotions.length)-1].description
+promotion3Description=database.promotions[getRandomInt(database.promotions.length)-1].description
+
+promotion1Icon          // expects a String (emoji)
+promotion2Icon          // expects a String (emoji)
+promotion3Icon  
   //  👆 YOUR CODE ENDS HERE. DON'T CHANGE ANY OTHER CODE 👆
 }
